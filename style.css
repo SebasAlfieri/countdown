@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@media only screen and (max-width: 2560px) {
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.cum_axel {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(axel.jpg);
+    background-color: rgba(255, 0, 0, 0.);
+    width: 100vw;
+    height: 100vh;
+}
+
+.cum_miki {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(miki.jpg);
+    background-color: rgba(255, 0, 0, 0.);
+    width: 100vw;
+    height: 100vh;
+}
+
+.cum_luchi{
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(luchi.jpg);
+    background-color: rgba(255, 0, 0, 0.);
+    width: 100vw;
+    height: 100vh;
+}
+
+.cum_gordo {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(gordo.jpg);
+    background-color: rgba(255, 0, 0, 0.);
+    width: 100vw;
+    height: 100vh;
+}
+
+.cum_laucha {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(laucha.jpg);
+    background-color: rgba(255, 0, 0, 0.);
+    width: 100vw;
+    height: 100vh;
+}
+
+.cum_virgo {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(virgo.jpg);
+    background-color: rgba(255, 0, 0, 0.);
+    width: 100vw;
+    height: 100vh;
+}
+
+.cum_paparela {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(paparela.jpg);
+    background-color: rgba(255, 0, 0, 0.);
+    width: 100vw;
+    height: 100vh;
+}
+
+.cum_sebo {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(sebo.jpg);
+    background-color: rgba(255, 0, 0, 0.);
+    width: 100vw;
+    height: 100vh;
+}
+
+.cum_maru {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(maru.jpg);
+    background-color: rgba(255, 0, 0, 0.);
+    width: 100vw;
+    height: 100vh;
+}
+
+.cum_papo {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(papo.jpg);
+    background-color: rgba(255, 0, 0, 0.);
+    width: 100vw;
+    height: 100vh;
+}
+
+.cum_luli {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(luli.jpg);
+    background-color: rgba(255, 0, 0, 0.);
+    width: 100vw;
+    height: 100vh;
+}
+
+.cum_leslie{
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(leslie.jpg);
+    background-color: rgba(255, 0, 0, 0.);
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: normal;
+    display: fixed;
+    font-size: 4rem;
+    margin-top: 60vh;
+    margin-bottom: 0;
+    color: rgb(221, 38, 160);
+    background-color: rgba(255, 255, 255, 0.712) ;
+    border-radius: 20px;
+    text-shadow: rgb(46, 167, 197) 5px 5px 2px;
+    text-align: center;
+    width: 50%;
+    align-self: center;
+}
+
+
+.countdown-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(221, 38, 160);
+    margin: auto;
+    margin-top: 0;
+    background-color: rgba(255, 255, 255, 0.712) ;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 0;
+}
+
+.countdown-container span {
+    color: rgb(46, 167, 197) ;
+    text-shadow: black 1px 1px 1px;
+
+}
+
+.countdown-container p {
+    text-shadow: rgb(46, 167, 197) 10px 10px 2px;
+}
+
+.big-text {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span {
+    font-size: 1.3rem;
+}
+
+.button {
+    font-weight: normal;
+    display: flex;
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: rgb(221, 38, 160);
+    background-color: rgba(255, 255, 255, 0.712) ;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-shadow: rgb(46, 167, 197) 5px 5px 2px;
+    text-align: center;
+    justify-content: space-evenly	;
+    width: 20%;
+    align-self: center;
+}
+
+.button_up {
+    margin-left: 50;
+}
+
+
+}
+
+
+@media only screen and (max-width: 1400px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100%;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    
+    }
+    
+    
+    h1 {
+        font-weight: normal;
+        display: fixed;
+        font-size: 3rem;
+        margin-top: 65vh;
+        margin-bottom: 0;
+        color: rgb(221, 38, 160);
+        background-color: rgba(255, 255, 255, 0.712) ;
+        border-radius: 20px;
+        text-shadow: rgb(46, 167, 197) 5px 5px 2px;
+        text-align: center;
+        width: 50%;
+        align-self: center;
+    }
+    
+    
+    .countdown-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: rgb(221, 38, 160);
+        margin: auto;
+        margin-top: 0;
+        background-color: rgba(255, 255, 255, 0.712) ;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-bottom: 0;
+    }
+    
+    .countdown-container span {
+        color: rgb(46, 167, 197) ;
+        text-shadow: black 1px 1px 1px;
+    
+    }
+    
+    .countdown-container p {
+        text-shadow: rgb(46, 167, 197) 10px 10px 2px;
+    }
+    
+    .big-text {
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 1;
+        margin: 1rem 2rem;
+    }
+    
+    .countdown-el {
+        text-align: center;
+    }
+    
+    .countdown-el span {
+        font-size: 1.3rem;
+    }
+    
+    .button {
+        font-weight: normal;
+        display: flex;
+        font-size: 2rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        color: rgb(221, 38, 160);
+        background-color: rgba(255, 255, 255, 0.712) ;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-shadow: rgb(46, 167, 197) 5px 5px 2px;
+        text-align: center;
+        justify-content: space-evenly	;
+        width: 20%;
+        align-self: center;
+    }
+    
+    .button_up {
+        margin-left: 50;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100%;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    
+    }
+    
+    .cum_axel {
+        background-position-y: -80px;
+    }
+    .cum_miki {
+        background-position-y: -80px;
+    }
+    .cum_luchi{
+        background-position-y: -80px;
+    }
+    .cum_laucha{
+        background-position-y: -80px;
+    }
+    .cum_gordo{
+        background-position-y: -80px;
+    }
+    .cum_virgo{
+        background-position-y: -80px;
+    }
+    .cum_sebo{
+        background-position-y: -80px;
+    }
+    .cum_paparela{
+        background-position-y: -80px;
+    }
+    .cum_maru{
+        background-position-y: -80px;
+    }
+    .cum_papo{
+        background-position-y: -80px;
+    }
+    .cum_luli{
+        background-position-y: -80px;
+    }
+    .cum_leslie{
+        background-position-y: -80px;
+    }
+    
+    h1 {
+        font-weight: normal;
+        display: fixed;
+        font-size: 1.8rem;
+        margin-top: 65vh;
+        margin-bottom: 0;
+        color: rgb(221, 38, 160);
+        background-color: rgba(255, 255, 255, 0.712);
+        border-radius: 0px;
+        text-shadow: rgb(46, 167, 197) 5px 5px 2px;
+        text-align: center;
+        width: 100%;
+        align-self: center;
+    }
+    
+    
+    .countdown-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: rgb(221, 38, 160);
+        margin: auto;
+        margin-top: 0;
+        background-color: rgba(255, 255, 255, 0.712) ;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-bottom: 0;
+    }
+    
+    .countdown-container span {
+        color: rgb(46, 167, 197) ;
+        text-shadow: black 1px 1px 1px;
+    
+    }
+    
+    .countdown-container p {
+        text-shadow: rgb(46, 167, 197) 10px 10px 2px;
+    }
+    
+    .big-text {
+        font-weight: bold;
+        font-size: 1.1rem;
+        line-height: 1;
+        margin: 1rem 2rem;
+    }
+    
+    .countdown-el {
+        text-align: center;
+    }
+    
+    .countdown-el span {
+        font-size: 0.9rem;
+    }
+    
+    .button {
+        font-weight: normal;
+        display: flex;
+        font-size: 2rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        color: rgb(221, 38, 160);
+        background-color: rgba(255, 255, 255, 0.712) ;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-shadow: rgb(46, 167, 197) 5px 5px 2px;
+        text-align: center;
+        justify-content: space-evenly	;
+        width: 70%;
+        align-self: center;
+    }
+    
+    .button_up {
+        margin-left: 50;
+    }
+    
+}
+
+@media only screen and (max-width: 576px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100%;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    
+    }
+    
+    .cum_axel {
+        background-position-y: -80px;
+    }
+    .cum_miki {
+        background-position-y: -80px;
+    }
+    .cum_luchi{
+        background-position-y: -80px;
+    }
+    .cum_laucha{
+        background-position-y: -80px;
+    }
+    .cum_gordo{
+        background-position-y: -80px;
+    }
+    .cum_virgo{
+        background-position-y: -80px;
+    }
+    .cum_sebo{
+        background-position-y: -80px;
+    }
+    .cum_paparela{
+        background-position-y: -80px;
+    }
+    .cum_maru{
+        background-position-y: -80px;
+    }
+    .cum_papo{
+        background-position-y: -80px;
+    }
+    
+    h1 {
+        font-weight: normal;
+        display: fixed;
+        font-size: 1.8rem;
+        margin-top: 65vh;
+        margin-bottom: 0;
+        color: rgb(221, 38, 160);
+        background-color: rgba(255, 255, 255, 0.712);
+        border-radius: 0px;
+        text-shadow: rgb(46, 167, 197) 5px 5px 2px;
+        text-align: center;
+        width: 100%;
+        align-self: center;
+    }
+    
+    
+    .countdown-container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: rgb(221, 38, 160);
+        margin: auto;
+        margin-top: 0;
+        background-color: rgba(255, 255, 255, 0.712) ;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-bottom: 0;
+    }
+    
+    .countdown-container span {
+        color: rgb(46, 167, 197) ;
+        text-shadow: black 1px 1px 1px;
+    
+    }
+    
+    .countdown-container p {
+        text-shadow: rgb(46, 167, 197) 10px 10px 2px;
+    }
+    
+    .big-text {
+        font-weight: bold;
+        font-size: 1.1rem;
+        line-height: 1;
+        margin: 1rem 2rem;
+    }
+    
+    .countdown-el {
+        text-align: center;
+    }
+    
+    .countdown-el span {
+        font-size: 0.9rem;
+    }
+    
+    .button {
+        font-weight: normal;
+        display: flex;
+        font-size: 2rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        color: rgb(221, 38, 160);
+        background-color: rgba(255, 255, 255, 0.712) ;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-shadow: rgb(46, 167, 197) 5px 5px 2px;
+        text-align: center;
+        justify-content: space-evenly	;
+        width: 70%;
+        align-self: center;
+    }
+    
+    .button_up {
+        margin-left: 50;
+    }
+    
+    
+}
