@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  &__atropos {
+    display: flex;
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    cursor: pointer;
+
+    &__logo {
+      margin: auto;
+      width: 300px;
+      height: auto;
+    }
+
+    &__ruffles {
+      position: absolute;
+      width: 200px;
+      height: auto;
+      &__a {
+        composes: container__atropos__ruffles;
+        top: 0;
+      }
+
+      &__b {
+        composes: container__atropos__ruffles;
+        top: 30%;
+        left: 200px;
+      }
+
+      &__c {
+        composes: container__atropos__ruffles;
+        right: 0;
+        bottom: 0;
+      }
+
+      &__d {
+        right: 20%;
+        top: 40%;
+        composes: container__atropos__ruffles;
+      }
+    }
+
+    button {
+      position: absolute;
+      background-color: blue;
+      color: yellow;
+      width: 300px;
+      height: 50px;
+      border-radius: 50px;
+      left: 50%;
+      right: 50%;
+      transform: translateX(-50%);
+      bottom: 30%;
+    }
+  }
+}
