@@ -5,7 +5,7 @@ import { ResultContainer } from '@/containers';
 export default function Home() {
   return (
     <main>
-      <Testing />
+      <ResultContainer />
     </main>
   );
 }
