@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import s from './Atropos.module.css';
+import s from './Testing.module.css';
 
-const Atropos = () => {
+const Testing = () => {
   return <motion.div className={s.container}>index</motion.div>;
 };
 
-export default Atropos;
+export default Testing;
