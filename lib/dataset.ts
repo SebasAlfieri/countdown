@@ -12,6 +12,12 @@ interface People {
 export const dataset: DataSet = {
   people: [
     {
+      name: 'AÑO NOVO',
+      day: 1,
+      month: 1,
+      img: '/images/anonovo.jpg'
+    },
+    {
       name: 'El Gordo',
       day: 27,
       month: 3,
@@ -63,7 +69,7 @@ export const dataset: DataSet = {
       name: 'Axel',
       day: 20,
       month: 9,
-      img: ''
+      img: '/images/axel.jpg'
     },
     {
       name: 'Leslie',
