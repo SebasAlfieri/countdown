@@ -1,111 +1,37 @@
-import React from 'react';
-import s from './Testing.module.css';
-import { motion } from 'framer-motion';
-import 'atropos/css';
-import Atropos from 'atropos/react';
-import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
-const Testing = () => {
+interface CountdownTimerProps {
+  birthday: Date;
+  name: string;
+}
+
+const CountdownTimer: React.FC<CountdownTimerProps> = ({ birthday, name }) => {
+  const [remainingTime, setRemainingTime] = useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const now = new Date();
+      const timeDifference = birthday.getTime() - now.getTime();
+      setRemainingTime(timeDifference);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [birthday]);
+
+  const seconds = Math.floor(remainingTime / 1000) % 60;
+  const minutes = Math.floor(remainingTime / 1000 / 60) % 60;
+  const hours = Math.floor(remainingTime / 1000 / 60 / 60) % 24;
+  const days = Math.floor(remainingTime / 1000 / 60 / 60 / 24);
+
   return (
-    <div className={s.container}>
-      {/* Atropos */}
-      <Atropos
-        className={s.container__atropos}
-        shadow={false}
-        alwaysActive={true}
-        highlight={false}
-        commonOrigin={true}
-        rotateXMax={20}
-        rotateYMax={10}
-        duration={1000}>
-        <Atropos
-          className={s.container__atropos__logo}
-          shadow={false}
-          alwaysActive={true}
-          commonOrigin={true}
-          highlight={false}>
-          <motion.div
-            whileInView={{
-              scale: [0.8, 1],
-              transition: { duration: 1, repeat: Infinity, repeatType: 'mirror' }
-            }}>
-            <Image
-              className={s.container__atropos__logo}
-              src={'/images/logo.png'}
-              alt="aa"
-              width={600}
-              height={300}
-            />
-          </motion.div>
-        </Atropos>
-        <Atropos
-          className={s.container__atropos__ruffles__a}
-          shadow={false}
-          alwaysActive={true}
-          commonOrigin={true}
-          highlight={false}>
-          <motion.div
-            initial={{ rotateZ: 0 }}
-            animate={{
-              opacity: 1,
-              rotateZ: 20,
-              transition: { duration: 2, repeat: Infinity, repeatType: 'mirror' }
-            }}>
-            <Image src={'/images/ruffles.png'} alt="aa" width={300} height={300} />
-          </motion.div>
-        </Atropos>
-        <Atropos
-          className={s.container__atropos__ruffles__b}
-          shadow={false}
-          alwaysActive={true}
-          commonOrigin={true}
-          highlight={false}>
-          <motion.div
-            initial={{ rotateZ: 0 }}
-            animate={{
-              opacity: 1,
-              rotateZ: 20,
-              transition: { duration: 2, repeat: Infinity, repeatType: 'mirror' }
-            }}>
-            <Image src={'/images/ruffles.png'} alt="aa" width={300} height={300} />
-          </motion.div>
-        </Atropos>
-        <Atropos
-          className={s.container__atropos__ruffles__c}
-          shadow={false}
-          alwaysActive={true}
-          commonOrigin={true}
-          highlight={false}>
-          <motion.div
-            initial={{ rotateZ: 0 }}
-            animate={{
-              opacity: 1,
-              rotateZ: 20,
-              transition: { duration: 2, repeat: Infinity, repeatType: 'mirror' }
-            }}>
-            <Image src={'/images/ruffles.png'} alt="aa" width={300} height={300} />
-          </motion.div>
-        </Atropos>
-        <Atropos
-          className={s.container__atropos__ruffles__d}
-          shadow={false}
-          alwaysActive={true}
-          commonOrigin={true}
-          highlight={false}>
-          <motion.div
-            initial={{ rotateZ: 0 }}
-            animate={{
-              opacity: 1,
-              rotateZ: 20,
-              transition: { duration: 2, repeat: Infinity, repeatType: 'mirror' }
-            }}>
-            <Image src={'/images/ruffles.png'} alt="aa" width={300} height={300} />
-          </motion.div>
-        </Atropos>
-      </Atropos>
-      <button onClick={() => alert('aaa')}>CONECTA A SPOTIFY</button>
+    <div>
+      <p>EL CUM DE {name}</p>
+      <p>Days: {days}</p>
+      <p>Hours: {hours}</p>
+      <p>Minutes: {minutes}</p>
+      <p>Seconds: {seconds}</p>
     </div>
   );
 };
 
-export default Testing;
+export default CountdownTimer;
