@@ -51,7 +51,7 @@ export const dataset: DataSet = {
       name: 'Lucas',
       day: 19,
       month: 8,
-      img: '/images/lucas.jpg'
+      img: '/images/lucas-new.jpeg'
     },
     {
       name: 'Veke',
